@@ -16,6 +16,8 @@
 		4E8CD9BF283E6DC0005F9F0F /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 4E8CD9BE283E6DC0005F9F0F /* Queries.graphql */; };
 		4E8CD9C1283E6DDE005F9F0F /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8CD9C0283E6DDE005F9F0F /* Api.swift */; };
 		4E8CD9C4283E6EFB005F9F0F /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8CD9C3283E6EFB005F9F0F /* Apollo.swift */; };
+		4E8CD9C6283E80F0005F9F0F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4E8CD9C5283E80F0005F9F0F /* .gitignore */; };
+		4E8CD9C8283E82D5005F9F0F /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E8CD9C7283E82D4005F9F0F /* schema.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		4E8CD9BE283E6DC0005F9F0F /* Queries.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
 		4E8CD9C0283E6DDE005F9F0F /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		4E8CD9C3283E6EFB005F9F0F /* Apollo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
+		4E8CD9C5283E80F0005F9F0F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4E8CD9C7283E82D4005F9F0F /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				4E8CD9AC283E5230005F9F0F /* ContentView.swift */,
 				4E8CD9BB283E6151005F9F0F /* 50percentModal.swift */,
 				4E8CD9AE283E5232005F9F0F /* Assets.xcassets */,
+				4E8CD9C7283E82D4005F9F0F /* schema.json */,
+				4E8CD9C5283E80F0005F9F0F /* .gitignore */,
 				4E8CD9B0283E5232005F9F0F /* Preview Content */,
 			);
 			path = testMarmalade;
@@ -154,6 +160,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E8CD9C6283E80F0005F9F0F /* .gitignore in Resources */,
+				4E8CD9C8283E82D5005F9F0F /* schema.json in Resources */,
 				4E8CD9BF283E6DC0005F9F0F /* Queries.graphql in Resources */,
 				4E8CD9B2283E5232005F9F0F /* Preview Assets.xcassets in Resources */,
 				4E8CD9AF283E5232005F9F0F /* Assets.xcassets in Resources */,
