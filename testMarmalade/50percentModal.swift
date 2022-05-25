@@ -41,9 +41,8 @@ struct _0percentModal: View {
                 }
             }
         }
-        .scaledToFit()
         .padding()
-        .background(Color.gray)
+        .background(Color.clear)
     }
 }
 

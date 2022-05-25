@@ -75,12 +75,12 @@ struct ContentView: View {
                             .tint(Color("buttonColor"))
                     }
                 }
-            }.onAppear() {
-                fetchCitations()
-            }.background(Color.orange)
-                .sheet(isPresented: $showingModal) {
-                    _0percentModal(showEnd: $showEnd)
-                }
+            }
+            .onAppear() { fetchCitations() }
+            .background(Color.orange)
+            .sheet(isPresented: $showingModal) {
+                _0percentModal(showEnd: $showEnd)
+            }
         }
     }
     
@@ -89,9 +89,11 @@ struct ContentView: View {
         Network.shared.apollo.fetch(query: query) { result in
             switch result {
             case .success(let graphQLResult):
-                if let citation = graphQLResult.data?.randomQuote {
-                    self.author = citation.author
-                    self.citation = citation.quote
+                if let citation = graphQLResult.data?.quotes {
+                    let n = Int.random(in: 0..<citation.count)
+                    
+                    self.author = citation[n].author
+                    self.citation = citation[n].quote
                 }
                 
             case .failure(let error):
