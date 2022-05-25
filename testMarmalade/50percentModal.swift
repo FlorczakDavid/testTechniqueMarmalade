@@ -17,7 +17,9 @@ struct _0percentModal: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
+                .stroke(Color.black, lineWidth: 2)
                 .foregroundColor(.white)
+                .scaledToFit()
             VStack {
                 Text("Tu es à 50% des citations")
                     .font(.headline)
@@ -33,11 +35,14 @@ struct _0percentModal: View {
                     } label: {
                         Text("Arrêter")
                     }.buttonStyle(.bordered)
+                        .foregroundColor(.gray)
                     Button {
                         presentationMode.wrappedValue.dismiss()
                     } label: {
                         Text("Continuer")
+                            .fontWeight(.bold)
                     }.buttonStyle(.bordered)
+                        .foregroundColor(.gray)
                 }
             }
         }

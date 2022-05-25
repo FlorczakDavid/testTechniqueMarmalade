@@ -27,7 +27,6 @@ struct ContentView: View {
                     showEnd = false
                 }
             }
-            
         }
         else {
             VStack {
@@ -48,6 +47,7 @@ struct ContentView: View {
                         .background(Color.white)
                         .cornerRadius(20)
                         .padding(.bottom, -20)
+                        .padding(.top, -60)
                     VStack {
                         Text("\(progression) % des citations")
                             .font(.largeTitle)
