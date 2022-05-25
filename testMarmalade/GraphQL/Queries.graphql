@@ -1,0 +1,7 @@
+
+query test {
+  randomQuote {
+    quote
+    author
+  }
+}

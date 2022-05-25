@@ -75,15 +75,29 @@ struct ContentView: View {
                             .tint(Color("buttonColor"))
                     }
                 }
+            }.onAppear() {
+                fetchCitations()
             }.background(Color.orange)
                 .sheet(isPresented: $showingModal) {
                     _0percentModal(showEnd: $showEnd)
-            }
+                }
         }
     }
     
     func fetchCitations() {
-        
+        let query = TestQuery()
+        Network.shared.apollo.fetch(query: query) { result in
+            switch result {
+            case .success(let graphQLResult):
+                if let citation = graphQLResult.data?.randomQuote {
+                    self.author = citation.author
+                    self.citation = citation.quote
+                }
+                
+            case .failure(let error):
+                print("Error loading data \(error)")
+            }
+        }
     }
 }
 
