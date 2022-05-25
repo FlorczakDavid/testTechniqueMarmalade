@@ -11,6 +11,8 @@
 		4E8CD9AD283E5230005F9F0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8CD9AC283E5230005F9F0F /* ContentView.swift */; };
 		4E8CD9AF283E5232005F9F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E8CD9AE283E5232005F9F0F /* Assets.xcassets */; };
 		4E8CD9B2283E5232005F9F0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E8CD9B1283E5232005F9F0F /* Preview Assets.xcassets */; };
+		4E8CD9BA283E5257005F9F0F /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 4E8CD9B9283E5257005F9F0F /* Apollo */; };
+		4E8CD9BC283E6151005F9F0F /* 50percentModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8CD9BB283E6151005F9F0F /* 50percentModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		4E8CD9AC283E5230005F9F0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4E8CD9AE283E5232005F9F0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E8CD9B1283E5232005F9F0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4E8CD9BB283E6151005F9F0F /* 50percentModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 50percentModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E8CD9BA283E5257005F9F0F /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				4E8CD9AA283E5230005F9F0F /* testMarmaladeApp.swift */,
 				4E8CD9AC283E5230005F9F0F /* ContentView.swift */,
+				4E8CD9BB283E6151005F9F0F /* 50percentModal.swift */,
 				4E8CD9AE283E5232005F9F0F /* Assets.xcassets */,
 				4E8CD9B0283E5232005F9F0F /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = testMarmalade;
+			packageProductDependencies = (
+				4E8CD9B9283E5257005F9F0F /* Apollo */,
+			);
 			productName = testMarmalade;
 			productReference = 4E8CD9A7283E5230005F9F0F /* testMarmalade.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 4E8CD99E283E5230005F9F0F;
+			packageReferences = (
+				4E8CD9B8283E5257005F9F0F /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 4E8CD9A8283E5230005F9F0F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				4E8CD9AD283E5230005F9F0F /* ContentView.swift in Sources */,
 				4E8CD9AB283E5230005F9F0F /* testMarmaladeApp.swift in Sources */,
+				4E8CD9BC283E6151005F9F0F /* 50percentModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4E8CD9B8283E5257005F9F0F /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.51.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4E8CD9B9283E5257005F9F0F /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E8CD9B8283E5257005F9F0F /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4E8CD99F283E5230005F9F0F /* Project object */;
 }
